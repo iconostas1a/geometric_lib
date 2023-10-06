@@ -90,3 +90,7 @@
   triangle file's added (41e7b31) - добавлен файл triangle.py
   
   formula's changed (06f00e1) - в файле rectangle.py формула a+b изменена на 2*(a+b)
+
+  Update README.md (aee10ad) - добавлена документация 
+
+  comments are added (759fc1d) - добавлены комментарии к файлам
