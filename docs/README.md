@@ -82,7 +82,53 @@
      r(int): натуральное число
     Возвращаемое значение: 2 * math.pi * r
 
-  
+# тест-кейсы для файла circle.py
+
+|     Название теста     |     Входные данные     |     Expected     |     Actual       |
+|------------------------|------------------------|------------------|----------------- |
+|      perimeter(0)      |        r = 0           |         0        |        0         |
+|      perimeter(-1)     |        r = -1          | Incorrect input  | Incorrect input  |
+|      area(0)           |        r = 0           |         0        |        0         |
+|      area(-5)          |        r = -5          | Incorrect input  | Incorrect input  |
+|      area(4)           |        r = 4           | 50.26548245743669| 50.26548245743669|
+|      area("a")         |        r = "a"         | Incorrect input  |  Incorrect input |
+
+
+
+# тест-кейсы для файла rectangle.py
+
+|     Название теста     |     Входные данные     |     Expected     |     Actual       |
+|------------------------|------------------------|------------------|----------------- |
+|      perimeter(12, 0)  |      a = 12  b = 0     |         12       |        12        |
+|      perimeter(-5, -5) |      a = -5  b = -5    | Incorrect input  | Incorrect input  |
+|      area(-1, 0)       |      a = -1  b = 0     | Incorrect input  | Incorrect input  |
+|      area(10, 0)       |      a = 10  b = 0     |         0        |        0         |
+|      area(4, 2)        |      a = 4   b = 2     |         8        |        8         |
+|      area(6, "a")      |      a = 6   b = "a"   | Incorrect input  | Incorrect input  |
+
+
+# тест-кейсы для файла triangle.py
+
+|     Название теста     |     Входные данные     |     Expected     |     Actual       |
+|------------------------|------------------------|------------------|----------------- |
+|   perimeter(10, -1, 8) | a = 10  b = -1  c = 8  | Incorrect input  | Incorrect input  |
+|   perimeter(8, 0, 9)   | a = 8  b = 0  c = 9    |        17        |        17        |
+|      area(-1, 8)       |      a = -1  b = 8     | Incorrect input  | Incorrect input  |
+|      area(10, 0)       |      a = 10  b = 0     |         0        |        0         |
+|      area(4, 2)        |      a = 4   b = 2     |         4        |        4         |
+|      area(4, "a")      |      a = 4   b = "a"   | Incorrect input  | Incorrect input  |
+
+
+# тест-кейсы для файла square.py
+
+|     Название теста     |     Входные данные     |     Expected     |     Actual       |
+|------------------------|------------------------|------------------|----------------- |
+|      perimeter(0)      |        r = 0           |         0        |        0         |
+|      perimeter(-1)     |        r = -1          | Incorrect input  | Incorrect input  |
+|      area(0)           |        r = 0           |         0        |        0         |
+|      area(-5)          |        r = -5          | Incorrect input  | Incorrect input  |
+|      area(4)           |        r = 4           |         4        |        4         |
+|      area("a")         |        r = "a"         | Incorrect input  | Incorrect input  |
 
 ## История комитов 
   File's added (2c29e18) - добавлен файл rectangle.py
