@@ -82,6 +82,46 @@
      r(int): натуральное число
     Возвращаемое значение: 2 * math.pi * r
 
+# примеры юниттестов для файла triangle.py
+
+    class TriangleTestCase(unittest.TestCase):
+      def test_zero_mul_area(self):
+          self.assertEqual(area(10, 0), 0)
+  
+      def test_negative_number(self):
+          self.assertEqual(area(-1, 8), "Incorrect input")
+          
+      def test_letter_input(self):
+          self.assertEqual(area(1, "a"), "Incorrect input")
+
+# примеры юниттестов для файла rectangle.py
+
+    class RectangleTestCase(unittest.TestCase):
+      def test_zero_mul_area(self):
+          self.assertEqual(area(10, 0), 0)
+    
+      def test_negative_number(self):
+          self.assertEqual(area(-1, 0), "Incorrect input")
+
+# примеры юниттестов для файла circle.py
+
+    class CircleTestCase(unittest.TestCase):
+      def test_zero_mul_area(self):
+          self.assertEqual(area(0), 0)
+  
+      def test_negative_number(self):
+          self.assertEqual(area(-1), "Incorrect input")
+          self.assertEqual(area(4), 50.26548245743669)
+
+# примеры юниттестов для файла square.py
+
+  class SquareTestCase(unittest.TestCase):
+      def test_zero_mul_area(self):
+          self.assertEqual(area(0), 0)
+  
+      def test_zero_sum(self):
+          self.assertEqual(perimeter(12), 24)
+
 # тест-кейсы для файла circle.py
 
 |     Название теста     |     Входные данные     |     Expected     |     Actual       |
