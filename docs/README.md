@@ -115,14 +115,14 @@
 
 # примеры юниттестов для файла square.py
 
-  class SquareTestCase(unittest.TestCase):
-      def test_zero_mul_area(self):
-          self.assertEqual(area(0), 0)
-  
-      def test_zero_sum(self):
-          self.assertEqual(perimeter(12), 24)
+    class SquareTestCase(unittest.TestCase):
+        def test_zero_mul_area(self):
+            self.assertEqual(area(0), 0)
+    
+        def test_zero_sum(self):
+            self.assertEqual(perimeter(12), 24)
 
-# тест-кейсы для файла circle.py
+
 
 |     Название теста     |     Входные данные     |     Expected     |     Actual       |
 |------------------------|------------------------|------------------|----------------- |
