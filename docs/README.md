@@ -123,6 +123,7 @@
             self.assertEqual(perimeter(12), 24)
 
 
+# тест-кейсы для файла circle.py
 
 |     Название теста     |     Входные данные     |     Expected     |     Actual       |
 |------------------------|------------------------|------------------|----------------- |
@@ -132,6 +133,7 @@
 |      area(-5)          |        r = -5          | Incorrect input  | Incorrect input  |
 |      area(4)           |        r = 4           | 50.26548245743669| 50.26548245743669|
 |      area("a")         |        r = "a"         | Incorrect input  |  Incorrect input |
+|      area(true)        |        r = true        | Incorrect input  |  Incorrect input |
 
 
 
