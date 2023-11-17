@@ -159,6 +159,7 @@
 |      area(10, 0)       |      a = 10  b = 0     |         0        |        0         |
 |      area(4, 2)        |      a = 4   b = 2     |         4        |        4         |
 |      area(4, "a")      |      a = 4   b = "a"   | Incorrect input  | Incorrect input  |
+|      area(true)        |      a = true          | Incorrect input  | Incorrect input  |
 
 
 # тест-кейсы для файла square.py
@@ -169,7 +170,7 @@
 |      perimeter(-1)     |        r = -1          | Incorrect input  | Incorrect input  |
 |      area(0)           |        r = 0           |         0        |        0         |
 |      area(-5)          |        r = -5          | Incorrect input  | Incorrect input  |
-|      area(4)           |        r = 4           |         4        |        4         |
+|      area(4)           |        r = 4           |         16       |        16        |
 |      area("a")         |        r = "a"         | Incorrect input  | Incorrect input  |
 
 ## История комитов 
