@@ -10,16 +10,22 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        os: [ ubuntu-latest, windows-latest ]
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: "3.10"
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.10"
 
-    - name: Run Unit-Tests
-      run: python Tests-Activate.py
+      - name: Run UnittestCircle.py
+          run: python UnittestCircle.py
+      - name: Run UnittestRectangle.py
+          run: python UnittestRectangle.py
+      - name: Run UnittestTriangle.py
+          run: python UnittestTriangle.py
+      - name: Run UnittestSquare.py
+          run: python UnittestSquare.py
