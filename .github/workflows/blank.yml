@@ -13,19 +13,16 @@ jobs:
         os: [ ubuntu-latest, windows-latest ]
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: "3.10"
+      - uses: actions/checkout@v3
 
       - name: Run UnittestCircle.py
-          run: python UnittestCircle.py
+        run: python UnittestCircle.py
+
       - name: Run UnittestRectangle.py
-          run: python UnittestRectangle.py
+        run: python UnittestRectangle.py
+
       - name: Run UnittestTriangle.py
-          run: python UnittestTriangle.py
+        run: python UnittestTriangle.py
+
       - name: Run UnittestSquare.py
-          run: python UnittestSquare.py
+        run: python UnittestSquare.py
